@@ -7,10 +7,10 @@ trigger AccountTrigger on Account(
   after delete,
   after undelete
 ) {
-  if (Trigger.isAfter && Trigger.isInsert) {
-    AccountHandler.createNewOpportunity(Trigger.New);
-  }
-  if (Trigger.isBefore && Trigger.isInsert) {
-    AccountTriggerHandler.CreateAccounts(Trigger.New);
-  }
+  // if (Trigger.isAfter && Trigger.isInsert) {
+  //   AccountHandler.createNewOpportunity(Trigger.New);
+  // }
+  // if (Trigger.isBefore && Trigger.isInsert) {
+  //   AccountTriggerHandler.CreateAccounts(Trigger.New);
+  // }
 }
